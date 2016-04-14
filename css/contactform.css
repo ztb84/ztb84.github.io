@@ -1,0 +1,103 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color:lightblue;
+  margin:0px;
+  padding:0px;
+}
+
+.content{
+  background-color:white;
+  width:960px;
+  /* centers block elements */
+  margin:-20px auto;
+  padding:20px;
+  border:3px solid darkgrey;
+  box-shadow:2px 2px 15px black;
+  border-radius:15px;
+  position:relative;
+  top:150px;
+}
+
+.navbar{
+  background-color:dodgerblue;
+  height:90px;
+  width:100%;
+  position:fixed;
+  z-index:1000;
+  top:0px;
+}
+
+/* descendant selector */
+.navbar div{
+  display:inline-block;
+  margin:0px 30px;
+  height:90px;
+  width:120px;
+  margin:0px -3px;
+  text-align:center;
+  transition:background-color .5s, font-size .5s;
+}
+
+/* pseudo-selector */
+.navbar div:hover{
+  background-color:skyblue;
+  font-size:20px;
+}
+
+.navbar span{
+  position:relative;
+  top:25px;
+}
+
+h1{
+  text-align:center;
+}
+
+/*descendant selector*/
+.content h2{
+  text-align:center;
+}
+
+.content form{
+  text-align:center;
+}
+
+/*attribute selector*/
+/*descendant selector*/
+/*AT THE SAME TIME*/
+.content input[type="date"]{
+  display:block;
+  margin:0 auto;
+}
+
+.content input{
+  margin-bottom:15px;
+  height:30px;
+  width:200px;
+  font-size:22px;
+}
+
+.content textarea{
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.content input[type="radio"]{
+  height:20px;
+  width:30px;
+}
+
+/* class selector */
+.special-paragraph{
+  color:rgb(0, 191, 255);
+  font-size:20px;
+}
+
+.special-paragraph-2{
+  color:purple;
+}
+
+/* id selector */
+#special-p-id{
+  color:purple;
+}
